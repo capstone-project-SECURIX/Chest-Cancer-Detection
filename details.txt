@@ -1,0 +1,61 @@
+daatset link : https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
+model development and training code : https://www.kaggle.com/code/mrappplg/chest-cancer-detection/notebook
+
+# pip install Flask tensorflow numpy
+# pip install tensorflow 
+# pip install pillow
+
+# import tensorflow as tf
+# from tensorflow.keras.preprocessing import image
+
+model tarining:
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
+from tensorflow.keras.layers import Activation, Dropout, Flatten, Dense
+from tensorflow.keras.optimizers import Adam
+
+# Define the CNN model
+model = Sequential()
+model.add(Conv2D(32, (3, 3), input_shape=(img_width, img_height, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(64, (3, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(128, (3, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Flatten())
+model.add(Dense(128))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+model.add(Dense(4, activation='softmax'))  # Four classes: Adenocarcinoma, Large cell carcinoma, Squamous cell carcinoma, Normal
+
+# Compile the model
+model.compile(loss='categorical_crossentropy',
+              optimizer=Adam(learning_rate=0.001),
+              metrics=['accuracy'])
+
+# Train the model
+history = model.fit(
+    train_generator,
+    steps_per_epoch=train_generator.samples // batch_size,
+    epochs=121,  # You can adjust the number of epochs
+    validation_data=validation_generator,
+    validation_steps=validation_generator.samples // batch_size)
+
+# output class_labels = ['Adenocarcinoma', 'Large cell carcinoma', 'Squamous cell carcinoma', 'Normal']
+
+team : Atharva pawar, aditya vyas, harsh trivedi
+
+subject : datascience in health care  - mini project
+
+website deployed on : https://dshc-chest-cancer-detection.atharvapawar.repl.co/
+
+create a professional documentation using above data

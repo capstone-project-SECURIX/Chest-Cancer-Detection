@@ -1,0 +1,76 @@
+### Research Papers related to male and female chest cancer detection from 2020 to 2023:
+
+
+### Paper - 1:
+
+    Deep Learning for Chest X-ray Analysis: A Survey
+
+    Published Year: 2021
+
+    Link: https://arxiv.org/abs/2103.08700
+
+    Authors: Ecem Sogancioglu and 4 other authors
+
+    Description: This paper provides a comprehensive review of studies that have used deep learning for chest radiograph analysis. It categorizes the works based on different tasks such as image-level prediction, segmentation, localization, image generation, and domain adaptation. The paper also discusses the current state of the art and potential future directions in this field.
+
+    Takeaway: The paper offers insights into the applications of deep learning on chest radiographs and provides an overview of the advancements in this area.
+
+
+### Paper - 2:
+
+    A Deep Analysis of Transfer Learning Based Breast Cancer Detection Using Histopathology Images
+
+    Published Year: 2023
+
+    Link: https://arxiv.org/abs/2304.05022
+
+    Authors: Md Ishtyaq Mahmud and 2 other authors
+
+    Description: This research paper analyzes the performance of pre-trained deep transfer learning models like ResNet50, ResNet101, VGG16, and VGG19 for breast cancer detection using histopathology images. The study demonstrates that ResNet50 outperforms other models in terms of accuracy, Area under Curve (AUC), and recall rates.
+
+    Takeaway: The research highlights the effectiveness of deep transfer learning models in breast cancer detection using histopathology images and identifies the superior performance of ResNet50 in this context.
+
+
+### Paper - 3:
+
+    Automatic Lung Cancer Prediction from Chest X-ray Images Using Deep Learning Approach
+
+    Published Year: 2018
+
+    Link: https://arxiv.org/abs/1808.10858
+
+    Authors: Worawate Ausawalaithong and 2 other authors
+
+    Description: This study explores the use of a convolutional neural network (DenseNet-121) and transfer learning for classifying lung cancer using chest X-ray images. The model is trained on a lung nodules dataset and achieves promising results in terms of accuracy, specificity, sensitivity, and the ability to provide a heatmap for identifying the location of lung nodules.
+
+    Takeaway: The paper demonstrates the potential of deep learning and transfer learning in lung cancer prediction using chest X-ray images and provides insights into the performance of the DenseNet-121 model.
+
+
+### Paper - 4:
+
+    Use of Transfer Learning and Wavelet Transform for Breast Cancer Detection
+
+    Published Year: 2021
+
+    Link: https://arxiv.org/abs/2103.03602
+
+    Authors: Ahmed Rasheed and 2 other authors
+
+    Description: This research paper proposes a system that combines segmentation and wavelet transform as pre-processing techniques to enhance important features in mammography images. The system utilizes transfer learning in neural networks to improve the accuracy of breast cancer detection. The study shows significant improvements in detection accuracy using the proposed techniques.
+
+    Takeaway: The paper presents a novel approach that leverages transfer learning and wavelet transform to enhance the accuracy of breast cancer detection in mammography images.
+
+
+### Paper - 5:
+
+    Robust breast cancer detection in mammography and digital breast tomosynthesis using annotation-efficient deep learning approach
+
+    Published Year: 2019
+
+    Link: https://arxiv.org/abs/1912.11027
+
+    Authors: William Lotter and 12 other authors
+
+    Description: This research paper presents an annotation-efficient deep learning approach for mammogram classification. The approach achieves state-of-the-art performance in mammogram classification and extends to digital breast tomosynthesis. The study demonstrates the detection of cancers in clinically-negative prior mammograms of cancer patients and shows promising results in improving screening mammography accuracy.
+
+    Takeaway: The paper introduces an efficient deep learning approach for breast cancer detection in mammography and digital breast tomosynthesis, highlighting its potential to improve the accuracy of screening mammography.
